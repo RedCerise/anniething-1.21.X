@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "anniething",
+	"version": "${version}",
+	"name": "Anniething",
+	"description": "Me when I get silly with it",
+	"authors": [
+		"Anminty"
+	],
+	"contact": {
+		"homepage": "None",
+		"sources": "https://github.com/PlaceHolder"
+	},
+	"license": "ARR",
+	"icon": "assets/anniething/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.anminty.anniething.Anniething"
+		],
+		"fabric-datagen": [
+			"net.anminty.anniething.AnniethingDataGenerator"
+		],
+		"client": [
+			"net.anminty.anniething.AnniethingClient"
+		]
+	},
+	"mixins": [
+		"anniething.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
